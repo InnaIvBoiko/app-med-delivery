@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medicine Delivery Shopping Cart Page</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="./index.html">Shop</a>
+          <div class="line"></div>
+          <p>Shopping Cart</p>
+        </nav>
+      </div>
+    </header>
+    <section class="cart">
+      <div class="container">
+        <form class="cart-form">
+          <fieldset class="cart-form-user-order">
+            <label for="username">
+              Name:
+              <input
+                class="cart-form-input"
+                type="text"
+                id="username"
+                placeholder="Input your name, please"
+                required
+              />
+            </label>
+            <label for="email">
+              Email:
+              <input
+                class="cart-form-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Input your email, please"
+                required
+              />
+            </label>
+            <label for="phone">
+              Phone:
+              <input
+                class="cart-form-input"
+                type="number"
+                name="phone"
+                id="phone"
+                placeholder="Input your phone, please"
+                required
+              />
+            </label>
+            <label for="address">
+              Address:
+              <input
+                class="cart-form-input"
+                type="text"
+                name="address"
+                id="address"
+                placeholder="Input your address, please"
+                required
+              />
+            </label>
+          </fieldset>
+          <fieldset class="cart-form-user-order">
+            <div class="user-order-wrap">
+              <img src="#" alt="Medicine" width="264" height="120" />
+              <div class="user-order-info">
+                <h2>Paracetamol</h2>
+                <p>Price: <span class="price">888</span></p>
+                <label for="quantity">
+                  <input
+                    class="cart-form-input"
+                    type="number"
+                    name="quantity"
+                    id="quantity"
+                    step="1"
+                    min="1"
+                    max="100"
+                    value="1"
+                  />
+                </label>
+              </div>
+            </div>
+            <div class="user-order-wrap">
+              <img src="#" alt="Medicine" width="264" height="120" />
+              <div class="user-order-info">
+                <h2>Paracetamol</h2>
+                <p>Price: <span class="price">888</span></p>
+                <label for="quantity">
+                  <input
+                    class="cart-form-input"
+                    type="number"
+                    name="quantity"
+                    id="quantity"
+                    step="1"
+                    min="1"
+                    max="100"
+                    value="1"
+                  />
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <div class="total-price-wrap">
+            <h3>Total price: <span class="total-price">999</span></h3>
+            <button class="cart-form-btn" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
