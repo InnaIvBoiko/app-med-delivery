@@ -6,7 +6,6 @@ const SHOPS_5 = document.getElementById(5);
 
 const PRODUCTS = document.querySelector('.product-cards-list');
 
-const URL_SHOPS = 'https://65ec3e490ddee626c9afcf03.mockapi.io/shops/';
 const URL_MEDICINES = 'https://65ec3e490ddee626c9afcf03.mockapi.io/medicines/';
 
 // < =================== product-cards =================== >
