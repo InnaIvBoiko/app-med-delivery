@@ -2,8 +2,8 @@ const form = document.querySelector('.cart-form');
 
 // < =================== submit form =================== >
 
-function order() {
-
+function order(event) {
+    event.preventDefault();
     const username = document.querySelector('#username').value;
     const email = document.querySelector('#email').value;
     const phone = document.querySelector('#phone').value;
@@ -28,6 +28,7 @@ function order() {
     };
 
     console.log(order);
+    form.reset();
 };
 
 form.addEventListener('submit', order);
